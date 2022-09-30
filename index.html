@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-ch">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      /* Style the body */
+
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+      /* Style the note */
+      .note {
+        background: #eee;
+      }
+
+      /* Header/logo Title */
+
+      .header {
+        padding: 60px;
+        text-align: center;
+        background: #1a1c1c;
+        color: white;
+      }
+      /* Style the top navigation bar */
+
+      .navbar {
+        display: flex;
+        background-color: #333;
+      }
+      /* Style the navigation bar links */
+
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      /* Change color on hover */
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      /* Column container */
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+
+      .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+      /* Main column */
+
+      .main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+      /* Fake image, just for this example */
+
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+      /* Footer */
+
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+      @media screen and (max-width: 700px) {
+        .row,
+        .navbar {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://wow.techbrood.com/libs/jquery/jquery-2.1.1.min.js"
+    ></script>
+    <!-- Note -->
+    <div class="note">
+      <h4 style="text-align: center">调整浏览器窗口的大小以查看响应效果</h4>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1>卓越托管服务中心</h1>
+      <p>Center of <b>Excellence in custodial</b> Services</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="#">首页</a>
+      <a href="#">内容</a>
+      <a href="#">新闻</a>
+      <a href="#">关于我们</a>
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+      <div class="side">
+        <h2>济南槐荫卓越托管服务中心</h2>
+        <h5>教育机构:</h5>
+        <div class="fakeimg" style="height: 200px">图片</div>
+        <p>需要一些简介文字..</p>
+        <h3>宣传图片</h3>
+        <p>与孩子们的 日常</p>
+        <div class="fakeimg" style="height: 60px">图片</div>
+        <br />
+        <div class="fakeimg" style="height: 60px">图片</div>
+        <br />
+        <div class="fakeimg" style="height: 60px">图片</div>
+      </div>
+      <div class="main">
+        <h2>关于我们</h2>
+        <h5>公司成立于 xx年 x月 x日</h5>
+        <div class="fakeimg" style="height: 200px">图片</div>
+        <p>公司介绍</p>
+        <p>
+          十五字十五字十五字十五字十五字十五字十五字十五字十五字十五字十五字五字十五字
+          五字十五字五字十五字五字十五字五字十五字五字十五字
+        </p>
+        <br />
+        <h2>师资力量介绍</h2>
+        <h5>简介xxxxxxxxxxxxxx x年x月x日</h5>
+        <div class="fakeimg" style="height: 200px">图片</div>
+        <p>一些文字...</p>
+        <p>
+          十五字十五字十五字十五字十五字十五字十五字十五字十五字十五字十五字五字十五字
+          五字十五 字五字十五字五字十五字五字十五字五字十五字
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <h2>&copy济南槐荫卓越托管服务中心</h2>
+    </div>
+    <script></script>
+  </body>
+</html>
